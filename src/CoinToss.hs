@@ -5,7 +5,7 @@ import Delimited
 import Data.Map (empty, insertWith, foldWithKey)
 
 
--- ƒƒ‚‚µ‚Ä‚‘¬‰»
+-- ãƒ¡ãƒ¢ã—ã¦é«˜é€ŸåŒ–
 
 reflect :: PV Bool -> PM Bool
 reflect choices = shift (\k -> makeChoices k choices) where
@@ -29,7 +29,7 @@ flipsXor' n = loop n where
     return (r/=h)
 
 
--- d‚İ•t‚«‘I‘ğ‚Å‚‘¬‰»
+-- é‡ã¿ä»˜ãé¸æŠã§é«˜é€ŸåŒ–
 
 drunkCoin :: PM Bool
 drunkCoin = do
@@ -44,7 +44,7 @@ dcoinAnd n = do
   if x then dcoinAnd (n-1) else return False
 
 
--- ’x‰„•]‰¿‚Å‚‘¬‰»
+-- é…å»¶è©•ä¾¡ã§é«˜é€ŸåŒ–
 
 flipsTrue :: Prob -> Int -> PM Bool
 flipsTrue p 0 = return True
@@ -74,7 +74,7 @@ trues_ (x : xs) = do
   if y then trues_ xs else return False
 
 
--- ƒ†[ƒeƒBƒŠƒeƒB
+-- ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£
 
 explore :: Ord a => Maybe Int -> PV a -> PV a
 explore maxdepth choices = foldWithKey (\v p a -> (p, V v):a) susp ans where

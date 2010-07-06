@@ -14,7 +14,7 @@ grassModel =
                  (flip_ 0.1))) (\ grassIsWet ->
   if_ grassIsWet rain (dist []))))
 
--- ���i�h�o�[�W�����̃��W���[�����Ăяo���Ƃ��́A�ȉ��̒�`���g����B
+-- モナドバージョンのモジュールを呼び出すときは、以下の定義が使える。
 {-
 grassModel = do
   rain           <- flip_ 0.3
