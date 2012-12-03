@@ -1,10 +1,11 @@
-○DSL本体プログラム(5バージョン)
-　SearchTree0.hs  木探索
-　SearchTree.hs   木探索・モナド
-　CPS0.hs         継続渡し
- CPS.hs          継続渡し・モナド
- Direct          限定継続・モナド
-○呼出プログラム
-　Lawn.hs         濡れた芝生
- CoinToss.hs     コイン投げ
- ※どのDSLを使うかはインポート文をコメントアウトして選択してください。
+DSL(5 versions)
+  SearchTree0.hs  Tree Search
+  SearchTree.hs   Tree Search / Monad
+  CPS0.hs         CPS
+  CPS.hs          CPS / Monad
+  Direct.hs       Delimited Continuation / Monad
+
+Model
+  Lawn.hs         Wet Grass
+  CoinToss.hs     Coin Toss
+(*) Select DSL by commenting out the import statement.
