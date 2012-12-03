@@ -1,3 +1,6 @@
+Haskell implementation of Oleg's embedded probabilistic programming.
+http://okmij.org/ftp/kakuritu/#derivation
+
 DSL(5 versions)
   SearchTree0.hs  Tree Search
   SearchTree.hs   Tree Search / Monad
@@ -8,4 +11,4 @@ DSL(5 versions)
 Model
   Lawn.hs         Wet Grass
   CoinToss.hs     Coin Toss
-(*) Select DSL by commenting out the import statement.
+  (*) Select DSL by commenting out the import statement.
